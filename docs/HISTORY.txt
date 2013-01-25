@@ -2,8 +2,11 @@
 Changelog
 =========
 
-0.4 - Unreleased
+1.0 - 2013-01-25
 ----------------
+
+- courtesy release so people don't get
+  version 0.11 over 0.3. Also, about time for a 1.0...
 
 
 0.3 - 2012-12-17
