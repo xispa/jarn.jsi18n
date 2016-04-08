@@ -2,6 +2,12 @@
 Changelog
 =========
 
+2.0 - unreleased
+----------------
+
+- Changed the jsi18n.js file into an AMD Module and created a bundle to work with Plone 5.
+  [julianhandl]
+
 1.1 - 2014-07-10
 ----------------
 

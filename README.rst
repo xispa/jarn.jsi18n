@@ -9,15 +9,21 @@ This package provides the essentials for leveraging the i18n infrastructure in P
   * Provides you with `Message Factories` very similar to the ones used in your python code.
   * Makes use of the `local storage` available in modern browsers to avoid reloading message catalogs.
 
+Compatibility
+-----
+The versions 2.x are used for Plone 5.
+
+For support of Plone 4 and below please use versions 1.x.
+
 Usage
 -----
 Your package should depend on ``jarn.jsi18n`` and include it in its meta-data dependencies.
 
-In order to instantiate a ``MessageFactory`` and use it you will need to load the i18n catalog. Typically, this will be done in a way similar to::
+In order to instantiate a ``MessageFactory`` and use it you will require the ``jarn.jsi18n`` module and need to load the i18n catalog. Typically, this will be done in a way similar to::
 
-  $(document).ready(function () {
-      jarn.i18n.loadCatalog('plone', 'el');
-      _ = jarn.i18n.MessageFactory('plone')
+  require(["jarn.jsi18n"], function(jsi18n){
+      jsi18n.loadCatalog('plone', 'el');
+      _ = jsi18n.MessageFactory('plone');
   });
 
 The second parameter in ``loadCatalog`` specifying the language is optional, when omitted the ``lang`` attribute in the ``html`` tag is used. 

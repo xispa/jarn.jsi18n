@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1'
+version = '2.0'
 
 setup(name='jarn.jsi18n',
       version=version,
@@ -18,7 +18,7 @@ setup(name='jarn.jsi18n',
       keywords='plone javascript i18n',
       author='Yiorgis Gozadinos',
       author_email='ggozad@jarn.com',
-      url='https://github.com/ggozad/jarn.jsi18n',
+      url='https://github.com/collective/jarn.jsi18n',
       license='GPL',
       packages=find_packages(),
       namespace_packages=['jarn',],

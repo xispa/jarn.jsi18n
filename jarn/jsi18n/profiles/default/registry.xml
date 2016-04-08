@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="jarn.jsi18n">
+              
+    <records prefix="plone.resources/jarn.jsi18n"
+        interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="js">/++resource++jsi18n.js</value>
+    </records>
+    
+    <records prefix="plone.bundles/jarn.jsi18n-bundle"
+        interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>jarn.jsi18n</element>
+        </value>
+        <value key="enabled">True</value>
+    </records>
+    
+</registry>
