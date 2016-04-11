@@ -1,5 +1,6 @@
 define(
     'jarn.jsi18n',
+    ['jquery'],
     function($){
         
         var i18njs = {

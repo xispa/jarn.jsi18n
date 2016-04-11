@@ -5,6 +5,7 @@
     <records prefix="plone.resources/jarn.jsi18n"
         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
         <value key="js">/++resource++jsi18n.js</value>
+        <value key="deps">jquery</value>
     </records>
     
     <records prefix="plone.bundles/jarn.jsi18n-bundle"
