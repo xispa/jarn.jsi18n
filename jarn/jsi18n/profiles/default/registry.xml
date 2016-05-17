@@ -13,7 +13,7 @@
         <value key="resources">
             <element>jarn.jsi18n</element>
         </value>
-        <value key="enabled">True</value>
+        <value key="enabled">False</value>
     </records>
     
 </registry>
