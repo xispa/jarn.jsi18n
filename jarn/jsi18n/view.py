@@ -23,8 +23,10 @@ class i18njs(BrowserView):
             catalog = td._data[mo_path]._catalog
             if catalog is None:
                 td._data[mo_path].reload()
-                catalog = td._data[mo_path]._catalog._catalog
-                for key, val in catalog.iteritems():
+                catalog = td._data[mo_path]._catalog
+            catalog = catalog._catalog
+            for key, val in catalog.iteritems():
+                if val:
                     _catalog[key] = val
         return _catalog
 
